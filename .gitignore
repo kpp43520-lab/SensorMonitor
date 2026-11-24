@@ -1,0 +1,25 @@
+# Qt Creator / IDE
+build/
+.qtcreator/
+*.pro.user
+*.pro.user.*
+.qmake.stash
+.vs/
+
+# 编译产物
+*.o
+*.obj
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+
+# 运行时生成的数据
+*.db
+*.sqlite
+logs/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
