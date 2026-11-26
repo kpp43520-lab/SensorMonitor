@@ -15,14 +15,14 @@
 
 ```
 ┌────────────────────────────────────────────────────┐
-│           展示 / 存储层（UI + SQLite）                │
-│  MainWindow · RealtimeChart · HistoryPanel          │
-│  RecordService (SQLite) · MqttPublisher             │
+│           展示 / 存储层（UI + SQLite）              │
+│  MainWindow · RealtimeChart · HistoryPanel         │
+│  RecordService (SQLite) · MqttPublisher            |
 ├────────────────────────────────────────────────────┤
-│           协议解析层（ProtocolParser）                │
+│           协议解析层（ProtocolParser）               │
 │   滚动缓冲 → 帧头匹配 → 校验 → 浮点还原               │
 ├────────────────────────────────────────────────────┤
-│           数据接入层（IDataSource 多态）               │
+│           数据接入层（IDataSource 多态）              │
 │   SerialDataSource · TcpDataSource · MockDataSource │
 └────────────────────────────────────────────────────┘
 ```
@@ -70,7 +70,7 @@ mingw32-make        # MinGW
 
 ```
 ┌──────┬──────┬──────┬──────────────┬──────┐
-│ 帧头  │ 长度  │ 命令字│    数据域     │ 校验  │
+│ 帧头  │ 长度  │ 命令字│    数据域     │ 校验 │
 │ AA55  │ 1B   │ 1B   │   N 字节      │ 1B   │
 └──────┴──────┴──────┴──────────────┴──────┘
 ```
@@ -88,4 +88,9 @@ mingw32-make        # MinGW
 
 ## 运行截图
 
-（待补充：主界面实时曲线 + 历史查询面板各一张）
+<img width="1952" height="1311" alt="image" src="https://github.com/user-attachments/assets/fe213c6d-0912-4ea7-bd40-596cf03c6b64" />
+<img width="1911" height="1305" alt="image" src="https://github.com/user-attachments/assets/10f0b01d-e4af-43c2-8ae8-876febbdb69c" />
+<img width="1917" height="1312" alt="image" src="https://github.com/user-attachments/assets/813eb9cc-95c1-4684-867b-78d260c9ebf6" />
+
+
+
